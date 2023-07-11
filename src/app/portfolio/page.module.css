@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+}
+
+.main {
+  flex-basis: 95%;
+  background-color: #010922;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+.aside {
+  z-index: 10;
+  font-family: "Outfit", sans-serif;
+  background-color: #061136ea;
+  flex-basis: 5%;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside header,
+.aside footer {
+  padding: 2rem 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  width: 100%;
+
+  list-style-type: none;
+}
+
+.navbar ul li {
+  text-align: center;
+  border-right: 3px solid #061136;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 1.5rem 0.5rem;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.navbar ul li a:hover {
+  background-color: #0d1e56;
+}
+
+.navbar_active {
+  border-right: 3px solid #35bdff !important;
+}
+
+.aside footer a {
+  font-size: 20px;
+  color: white;
+  padding: 1rem;
+}
+
+.toggle {
+  display: none;
+  z-index: 11;
+  cursor: pointer;
+  background-color: white;
+  color: #0d2672;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-left: 12px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .aside {
+    position: fixed;
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+  }
+}
