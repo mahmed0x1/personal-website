@@ -2,10 +2,10 @@
 .aside {
   z-index: 10;
   font-family: "Outfit", sans-serif;
-  background-color: #061136ea;
-  flex-basis: 5%;
+  background-color: #061136e8;
   color: white;
   height: 100vh;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,56 +23,43 @@
 
 .navbar ul {
   width: 100%;
-
   list-style-type: none;
 }
 
-.navbar ul li {
-  text-align: center;
-  border-right: 3px solid #061136;
-}
-
 .navbar ul li a {
-  display: block;
   padding: 1.5rem 0.5rem;
   text-decoration: none;
   color: white;
-  width: 100%;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar ul li a:hover {
   background-color: #0d1e56;
 }
 
-.navbar_active {
-  border-right: 3px solid #35bdff !important;
-}
-
 .aside footer a {
-  font-size: 20px;
+  display: block;
+  font-size: 12px;
   color: white;
-  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.toggle {
-  display: none;
-  z-index: 11;
-  cursor: pointer;
-  background-color: white;
-  color: #0d2672;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  padding-left: 12px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 10%;
-  left: 0;
-  transform: translate(-50%, -50%);
+.navbar_active {
+  border-right: 3px solid #35bdff;
+}
+
+.aside i {
+  font-size: 12px;
+  margin-right: 0.5rem;
 }
 
 /* Tablet Styles */
@@ -83,14 +70,60 @@
 @media only screen and (max-width: 767px) {
   .aside {
     position: fixed;
-    display: none;
+    bottom: 0;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .toggle {
+  .aside .navbar {
+    width: 80%;
+  }
+
+  .aside footer {
+    width: 20%;
+  }
+
+  .navbar ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    width: 25%;
+    border-right: none;
+  }
+
+  .navbar_active {
+    border-top: 2px solid #35bdff;
   }
 
   .navbar ul li a {
-    font-size: 12px;
+    font-size: 9px;
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+
+  .aside header,
+  .aside footer {
+    padding: 0;
+  }
+
+  .aside footer a {
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9px;
+    text-decoration: none;
+  }
+
+  .aside i {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
   }
 }
