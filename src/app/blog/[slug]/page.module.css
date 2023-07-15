@@ -1,0 +1,89 @@
+.root {
+  display: flex;
+
+  overflow-y: hidden;
+}
+
+.wrapper {
+  z-index: 1;
+  background-color: #010922;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.article_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article_header h1 {
+  font-family: "Outfit", sans-serif;
+  margin: 1rem 0;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.article_header span {
+  letter-spacing: 1px;
+
+  font-style: italic;
+}
+
+.image_container {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.image_container .image {
+  background-image: url("/images/article1.jpg"); /* Replace 'your-image.jpg' with your actual image URL */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center; /* Position the image in the center */
+  width: 100%;
+  height: 100%;
+}
+
+.main .categories {
+  display: flex;
+  margin-bottom: 1rem;
+
+  align-self: flex-start;
+}
+
+.main .categories .category {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  border-radius: 50px;
+  background-color: #0d2672;
+  line-height: 1.5rem;
+  padding: 0 0.5rem;
+  font-weight: 500;
+}
+
+.main article {
+  font-size: 18px;
+  line-height: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 4rem;
+}

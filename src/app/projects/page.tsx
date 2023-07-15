@@ -1,3 +1,5 @@
+"use client";
+
 import Navigation from "@/components/navigation";
 
 import styles from "./page.module.css";

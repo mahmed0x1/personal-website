@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./navigation.module.css";
 
 import Link from "next/link";
@@ -7,8 +10,30 @@ interface NavigationProps {
 }
 // FC stands for functional component
 const Navigation: React.FC<NavigationProps> = ({ active }) => {
+  const [animationType, setAnimationType] = useState("animate__fadeInUp");
+
+  useEffect(() => {
+    const updateAnimationType = () => {
+      const newAnimationType =
+        document.body.clientWidth < 767
+          ? "animate__fadeInUp"
+          : "animate__fadeInLeft";
+      setAnimationType(newAnimationType);
+    };
+
+    updateAnimationType();
+
+    // Add a resize event listener to update the animation type on window resize
+    window.addEventListener("resize", updateAnimationType);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateAnimationType);
+    };
+  }, []);
+
   return (
-    <aside className={`animate__animated animate__fadeInLeft ${styles.aside} `}>
+    <aside className={`animate__animated ${animationType} ${styles.aside} `}>
       <header></header>
       <nav className={styles.navbar}>
         <ul>

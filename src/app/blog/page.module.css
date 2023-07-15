@@ -3,6 +3,48 @@
 }
 
 .main {
-  flex-basis: 95%;
-  background-color: #010922;
+  z-index: 1;
+  margin-left: 7rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main > .blogCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  margin: 1rem 0;
+}
+
+.pagination * {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+
+  .main > h1 {
+    font-size: 22px;
+  }
 }
