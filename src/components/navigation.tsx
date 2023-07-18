@@ -10,7 +10,7 @@ interface NavigationProps {
 }
 // FC stands for functional component
 const Navigation: React.FC<NavigationProps> = ({ active }) => {
-  const [animationType, setAnimationType] = useState("animate__fadeInUp");
+  const [animationType, setAnimationType] = useState("animate__fadeInLeft");
 
   useEffect(() => {
     const updateAnimationType = () => {

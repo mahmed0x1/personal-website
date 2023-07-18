@@ -1,0 +1,32 @@
+.pagination {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination li:first-child i,
+.pagination li:last-child i {
+  font-size: 11px;
+}
+
+.pagination li,
+.pagination a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.active_page {
+  background-color: #35bdff;
+}

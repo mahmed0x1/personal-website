@@ -1,28 +1,42 @@
 "use client";
 
 import styles from "./blogCard.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 import Link from "next/link";
 
 interface NavigationProps {
   title: string;
+  date: Date;
+  categories: string[];
+  description: string;
+  cover: string;
+  slug: string;
+  key: string;
 }
 // FC stands for functional component
-const BlogCard: React.FC<NavigationProps> = ({ title }) => {
+const BlogCard: React.FC<NavigationProps> = ({
+  title,
+  cover,
+  date,
+  slug,
+  key,
+  categories,
+  description,
+}) => {
   return (
-    <Link className={styles.card} href="/">
-      <img src="/images/article1.jpg" alt="Article" />
+    <a className={styles.card} href={`/blog/${slug}`}>
+      <img src={cover} alt="Article Cover" />
       <h1>{title}</h1>
       <div className={styles.categories}>
-        <div className={styles.category}>JavaScript</div>
-        <div className={styles.category}>Mobile Development</div>
+        {categories.map((category) => (
+          <div key={uuidv4()} className={styles.category}>
+            {category}
+          </div>
+        ))}
       </div>
-      <p className={styles.description}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.
-      </p>
-    </Link>
+      <p className={styles.description}>{description}</p>
+    </a>
   );
 };
 

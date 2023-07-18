@@ -3,13 +3,15 @@
 }
 
 .main {
+  position: relative;
   z-index: 1;
   margin-left: 7rem;
   width: 100%;
+  min-height: 95vh;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -29,19 +31,18 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.pagination {
-  margin: 1rem 0;
-}
-
-.pagination * {
-  color: white;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
   .main {
     margin: 0;
     margin-bottom: 5rem;
+    min-height: 90vh;
+  }
+
+  .main > .blogCards {
+    margin-bottom: 2rem;
   }
 
   .main > h1 {

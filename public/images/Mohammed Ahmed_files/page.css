@@ -1,0 +1,247 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/components/navigation.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.navigation_aside__369_Q {
+  z-index: 10;
+  font-family: "Outfit", sans-serif;
+  background-color: #061136d6;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation_aside__369_Q header,
+.navigation_aside__369_Q footer {
+  padding: 2rem 0;
+}
+
+.navigation_navbar__3WRhn {
+  width: 100%;
+}
+
+.navigation_navbar__3WRhn ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.navigation_navbar__3WRhn ul li a {
+  padding: 1.5rem 0.5rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation_navbar__3WRhn ul li a:hover {
+  background-color: #0d1e56;
+}
+
+.navigation_aside__369_Q footer a {
+  display: block;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation_navbar_active__VcGBe {
+  border-right: 3px solid #35bdff;
+}
+
+.navigation_aside__369_Q i {
+  font-size: 12px;
+  margin-right: 0.5rem;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .navigation_aside__369_Q {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation_aside__369_Q .navigation_navbar__3WRhn {
+    width: 80%;
+  }
+
+  .navigation_aside__369_Q footer {
+    width: 20%;
+  }
+
+  .navigation_navbar__3WRhn ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation_navbar__3WRhn ul li {
+    width: 25%;
+    border-right: none;
+  }
+
+  .navigation_navbar_active__VcGBe {
+    border-top: 2px solid #35bdff;
+  }
+
+  .navigation_navbar__3WRhn ul li a {
+    font-size: 9px;
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+
+  .navigation_aside__369_Q header,
+  .navigation_aside__369_Q footer {
+    padding: 0;
+  }
+
+  .navigation_aside__369_Q footer a {
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9px;
+    text-decoration: none;
+  }
+
+  .navigation_aside__369_Q i {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/components/blogCard.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.blogCard_card__kYa7T {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 380px;
+  border: 1px solid #15284b;
+
+  border-radius: 13px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.blogCard_card__kYa7T:hover {
+  border: 1px solid #35bdff;
+}
+
+.blogCard_card__kYa7T > img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.blogCard_card__kYa7T > h1 {
+  font-family: "Outfit", sans-serif;
+  margin: 0.5rem 0;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.blogCard_card__kYa7T .blogCard_categories__9TsfZ {
+  display: flex;
+}
+
+.blogCard_card__kYa7T .blogCard_categories__9TsfZ .blogCard_category__J8gGA {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  border-radius: 50px;
+  background-color: #0d2672;
+  line-height: 1.5rem;
+  padding: 0 0.5rem;
+  font-weight: 500;
+}
+
+.blogCard_card__kYa7T .blogCard_description__y3yyf {
+  text-align: left;
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/app/blog/page.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.page_root__fdyh8 {
+  display: flex;
+}
+
+.page_main__PRIo6 {
+  z-index: 1;
+  margin-left: 7rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_main__PRIo6 > h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.page_main__PRIo6 > .page_blogCards__yiOcv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.page_pagination__mKRgd {
+  margin: 1rem 0;
+}
+
+.page_pagination__mKRgd * {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .page_main__PRIo6 {
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+
+  .page_main__PRIo6 > h1 {
+    font-size: 22px;
+  }
+}
+

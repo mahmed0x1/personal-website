@@ -6,9 +6,9 @@
 
 .wrapper {
   z-index: 1;
-  background-color: #010922;
 
   width: 100%;
+
   display: flex;
   justify-content: center;
   margin-left: 7rem;
@@ -19,7 +19,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
+  width: 80%;
+  padding-bottom: 4rem;
 }
 
 .article_header {
@@ -44,8 +45,8 @@
 }
 
 .image_container {
-  width: 1200px;
-  height: 300px;
+  width: 100%;
+  height: 40vh;
   overflow: hidden;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -82,8 +83,125 @@
 
 .main article {
   font-size: 18px;
-  line-height: 3rem;
+  line-height: 2.5rem;
+  max-width: 90%;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   padding: 0 4rem;
+}
+
+.main article a {
+  color: inherit;
+}
+
+.main article p {
+  letter-spacing: 0.5px;
+}
+
+.main article h1,
+.main article h2,
+.main article h3 {
+  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  color: #35bdff;
+  margin: 4px 0;
+}
+
+.main article img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin: 0.5rem auto;
+}
+
+.main article code {
+  font-size: 14px;
+  line-height: 1.5rem;
+  border-radius: 16px;
+  margin: 0.5rem 0;
+}
+
+/* Reset default list styles */
+.main article ol {
+  list-style: none;
+  counter-reset: ordered-list-counter;
+  padding-left: 20px;
+}
+
+/* Style for list item numbering */
+.main article ol li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+/* Create a custom number style */
+.main article ol li:before {
+  content: counter(ordered-list-counter);
+  counter-increment: ordered-list-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px; /* Adjust font size as needed */
+  color: #007bff; /* Change color to your preferred color */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style for the last list item (remove the line at the bottom) */
+.main article ol li:last-child:after {
+  display: none;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .article_header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main article {
+    font-size: 16px;
+
+    padding: 0 2rem;
+  }
+
+  .article_header span {
+    font-size: 0.75rem;
+  }
+
+  .main .categories .category {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
+  .main .categories .category {
+    font-size: 12px;
+  }
+  .article_header span {
+    font-size: 0.75rem;
+    padding: 8px;
+    display: none;
+  }
+  .article_header h1 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .main article {
+    font-size: 16px;
+    line-height: 2.5rem;
+
+    padding: 0;
+  }
+
+  .image_container {
+    height: 25vh;
+  }
 }
