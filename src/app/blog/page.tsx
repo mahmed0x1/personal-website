@@ -21,7 +21,7 @@ export default async function Blog({
     <div className={styles.root}>
       <Navigation active="blog" />
       <div className={`animate__animated animate__fadeIn ${styles.main}`}>
-        <h1>Latest Blog Updates</h1>
+        <h1>Latest Blog Articles</h1>
         <div className={styles.blogCards}>
           {posts
             .slice(

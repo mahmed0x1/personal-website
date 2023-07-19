@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .article_header {
@@ -36,6 +36,7 @@
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: #eee;
 }
 
 .article_header span {
@@ -87,6 +88,7 @@
   max-width: 90%;
   font-family: "Roboto", sans-serif;
   padding: 0 4rem;
+  color: #eee;
 }
 
 .main article a {
@@ -151,6 +153,18 @@
   display: none;
 }
 
+.article_footer {
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  color: #eee;
+  font-style: italic;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .article_header h1 {
@@ -176,6 +190,7 @@
 @media only screen and (max-width: 767px) {
   .main {
     width: 100%;
+    padding-bottom: 4.5rem;
   }
   .main .categories .category {
     font-size: 12px;

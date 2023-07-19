@@ -4,6 +4,8 @@ import { GetStaticPaths } from "next";
 import matter, { GrayMatterFile } from "gray-matter";
 import Script from "next/script";
 
+import moment from "moment";
+
 import { getPostData } from "@/lib/posts";
 
 import Navigation from "@/components/navigation";
@@ -42,7 +44,6 @@ export default async function Blog({ params }: { params: { slug: string } }) {
           </div>
           <div className={styles.article_header}>
             <h1>{postData.title}</h1>
-            <span>Date: {postData.date.toDateString()}</span>
           </div>
           <div className={styles.categories}>
             {postData.categories.map((category) => (
@@ -52,6 +53,11 @@ export default async function Blog({ params }: { params: { slug: string } }) {
           <article
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           ></article>
+          <div className={styles.article_footer}>
+            <span>
+              Updated On: {moment(postData.date).format("MMM Do YYYY")}
+            </span>
+          </div>
         </div>
       </div>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" />

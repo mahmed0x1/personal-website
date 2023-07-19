@@ -11,6 +11,7 @@ interface NavigationProps {
 // FC stands for functional component
 const Navigation: React.FC<NavigationProps> = ({ active }) => {
   const [animationType, setAnimationType] = useState("animate__fadeInLeft");
+  const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
     const updateAnimationType = () => {
@@ -22,6 +23,7 @@ const Navigation: React.FC<NavigationProps> = ({ active }) => {
     };
 
     updateAnimationType();
+    setShouldRender(true);
 
     // Add a resize event listener to update the animation type on window resize
     window.addEventListener("resize", updateAnimationType);
@@ -32,7 +34,7 @@ const Navigation: React.FC<NavigationProps> = ({ active }) => {
     };
   }, []);
 
-  return (
+  return shouldRender ? (
     <aside className={`animate__animated ${animationType} ${styles.aside} `}>
       <header></header>
       <nav className={styles.navbar}>
@@ -66,6 +68,8 @@ const Navigation: React.FC<NavigationProps> = ({ active }) => {
         </a>
       </footer>
     </aside>
+  ) : (
+    <></>
   );
 };
 

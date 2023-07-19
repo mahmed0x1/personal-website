@@ -29,9 +29,11 @@
 .main > .blogCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 3rem;
+  padding-left: 4rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -39,6 +41,11 @@
     margin: 0;
     margin-bottom: 5rem;
     min-height: 90vh;
+  }
+
+  .main > .blogCards {
+    justify-content: center;
+    padding: 0;
   }
 
   .main > .blogCards {
