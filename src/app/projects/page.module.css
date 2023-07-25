@@ -3,6 +3,54 @@
 }
 
 .main {
-  flex-basis: 95%;
+  z-index: 1;
+  width: 80%;
+  margin-left: 8rem;
+  padding: 2rem;
   background-color: #010922;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header img {
+  width: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project .gallery {
+  width: 45%;
+}
+
+.project .gallery li button:before {
+  color: white !important;
+}
+
+.project .gallery img {
+  border-radius: 8px;
+}
+
+.project .description {
+  width: 50%;
 }
