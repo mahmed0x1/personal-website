@@ -27,6 +27,12 @@ const Projects: React.FC<NavigationProps> = ({}) => {
           <img src="/images/paint.png" />
         </div>
         <div className={styles.projects}>
+          <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <li>Project 4</li>
+          </ul>
           <div className={styles.project}>
             <div className={styles.gallery}>
               <Slider {...settings}>
@@ -37,16 +43,29 @@ const Projects: React.FC<NavigationProps> = ({}) => {
             </div>
             <div className={styles.description}>
               <h2>ChatApp</h2>
-              <p>This is a sample chat app that i made using react native</p>
-              <div>
-                <span>React Native</span>
-                <span>Redux</span>
-              </div>
-              <div>
-                <a>
+
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting.
+              </p>
+
+              <div className={styles.buttons}>
+                <a
+                  className={styles.github}
+                  href="https://www.github.com"
+                  target="_blank"
+                >
                   View Code <i className="fa-brands fa-github-alt"></i>
                 </a>
-                <a>
+                <a
+                  className={styles.demo_link}
+                  href="https://www.link.com"
+                  target="_blank"
+                >
                   Live Demo <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
               </div>

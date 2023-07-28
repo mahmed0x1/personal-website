@@ -7,13 +7,13 @@
   width: 80%;
   margin-left: 8rem;
   padding: 2rem;
-  background-color: #010922;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -29,18 +29,16 @@
 
 .projects {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .project {
-  width: 100%;
+  padding: 1rem;
+  width: 50%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.project .gallery {
-  width: 45%;
+  flex-direction: column;
 }
 
 .project .gallery li button:before {
@@ -52,5 +50,54 @@
 }
 
 .project .description {
-  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .description h2 {
+  font-family: "Outfit", sans-serif;
+  margin: 6px 0;
+  color: #35ebff;
+}
+
+.project .description p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 4px 0;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  color: #eee;
+  font-family: "Roboto", monospace;
+}
+
+.project .buttons a {
+  font-family: "Outfit", sans-serif;
+  background-color: rgb(80, 70, 80);
+  color: white;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 6px;
+}
+
+.project .buttons .demo_link {
+  background-color: #007bff;
+}
+
+.project .buttons .demo_link:hover {
+  background-color: #3295ff;
+}
+
+.project .buttons .github {
+  background-color: purple;
+}
+.project .buttons .github:hover {
+  background-color: rgb(161, 22, 161);
+}
+.project .buttons a i {
+  margin-left: 0.5rem;
 }
