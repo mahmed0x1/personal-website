@@ -55,9 +55,9 @@ const Navigation: React.FC<NavigationProps> = ({ active }) => {
             </Link>
           </li>
           <li>
-            <Link href="/resume">
+            <a href="/files/resume.pdf" target="_blank">
               <i className="fa-regular fa-file-lines"></i>Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

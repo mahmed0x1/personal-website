@@ -22,18 +22,16 @@ const Projects: React.FC<NavigationProps> = ({}) => {
     <div className={styles.root}>
       <Navigation active="projects" />
       <div className={styles.main}>
-        <div className={styles.header}>
-          <h1>Portfolio</h1>
-          <img src="/images/paint.png" />
-        </div>
         <div className={styles.projects}>
-          <ul>
+          <ul className={styles.projects_list}>
+            <li>My Projects:</li>
             <li>Project 1</li>
-            <li>Project 2</li>
+            <li className={styles.active}>ChatApp</li>
             <li>Project 3</li>
             <li>Project 4</li>
           </ul>
           <div className={styles.project}>
+            <h2>ChatApp</h2>
             <div className={styles.gallery}>
               <Slider {...settings}>
                 <img src="/projects/1.png" />
@@ -42,8 +40,6 @@ const Projects: React.FC<NavigationProps> = ({}) => {
               </Slider>
             </div>
             <div className={styles.description}>
-              <h2>ChatApp</h2>
-
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

@@ -1,9 +1,5 @@
-"use client";
-
 import styles from "./blogCard.module.css";
 import { v4 as uuidv4 } from "uuid";
-
-import Link from "next/link";
 
 interface NavigationProps {
   title: string;

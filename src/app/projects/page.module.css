@@ -9,34 +9,16 @@
   padding: 2rem;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.header h1 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.header img {
-  width: 40px;
-}
-
 .projects {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .project {
   padding: 1rem;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -57,18 +39,55 @@
   align-items: center;
 }
 
-.project .description h2 {
+.projects ul.projects_list {
+  padding: 0 2rem;
+  list-style-type: none;
   font-family: "Outfit", sans-serif;
-  margin: 6px 0;
+}
+
+.projects ul.projects_list li {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.projects ul.projects_list li:hover {
   color: #35ebff;
+}
+
+.projects ul.projects_list li.active {
+  color: #35ebff;
+
+  font-weight: 500;
+}
+
+.projects ul.projects_list li.active::before {
+  content: "> ";
+}
+
+.projects ul.projects_list li:first-child {
+  font-size: 1.5rem;
+  cursor: auto;
+}
+
+.projects ul.projects_list li:first-child:hover {
+  color: white;
+}
+
+.project h2 {
+  font-family: "Outfit", sans-serif;
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .project .description p {
   font-size: 16px;
   letter-spacing: 0.5px;
-  margin: 4px 0;
-  margin-bottom: 1rem;
-  line-height: 1.5rem;
+  margin: 8px 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.7rem;
   color: #eee;
   font-family: "Roboto", monospace;
 }
