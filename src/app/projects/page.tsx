@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import "node_modules/slick-carousel/slick/slick.css";
 import "node_modules/slick-carousel/slick/slick-theme.css";
 
+import { v4 } from "uuid";
+
 import { ProjectData, getProjects } from "@/lib/projects";
 
 import Navigation from "@/components/navigation";
@@ -48,6 +50,10 @@ const Projects: React.FC = ({}) => {
     };
   }, []);
 
+  const handleProjectClick = (index: number) => {
+    setActiveProject(index);
+  };
+
   const settings = {
     dots: true,
     fade: true,
@@ -58,7 +64,7 @@ const Projects: React.FC = ({}) => {
   return shouldRender ? (
     <div className={styles.root}>
       <Navigation active="projects" />
-      <div className={styles.main}>
+      <div className={`${styles.main}`}>
         <div className={styles.projects}>
           {deviceType === "desktop" ? (
             <ul className={styles.projects_list}>
@@ -66,10 +72,8 @@ const Projects: React.FC = ({}) => {
               {projects.map((project: any, index) => (
                 <li
                   key={index}
-                  onClick={() => {
-                    setActiveProject(index);
-                  }}
-                  className={styles.active}
+                  onClick={() => handleProjectClick(index)}
+                  className={activeProject === index ? styles.active : ""}
                 >
                   {project.name}
                 </li>
@@ -80,18 +84,25 @@ const Projects: React.FC = ({}) => {
           )}
           <div className={styles.project}>
             {deviceType === "desktop" ? (
-              <h2>{projects[activeProject].name}</h2>
+              <h2
+                key={v4()}
+                className={`animate__animated  animate__fadeInDown`}
+              >
+                {projects[activeProject].name}
+              </h2>
             ) : (
               <>
                 <h2 className={styles.projects_list_mobile}>My Projects</h2>
                 <ul className={styles.projects_list_mobile}>
                   {projects.map((project: any, index) => (
                     <li
-                      key={index}
-                      onClick={() => {
-                        setActiveProject(index);
-                      }}
-                      className={styles.active}
+                      key={v4()}
+                      onClick={() => handleProjectClick(index)}
+                      className={
+                        activeProject === index
+                          ? `animate__animated animate__zoomIn ${styles.active}`
+                          : ""
+                      }
                     >
                       {project.name}
                     </li>
@@ -100,40 +111,46 @@ const Projects: React.FC = ({}) => {
               </>
             )}
             <div
-              className={styles.gallery}
-              style={{
-                padding:
-                  deviceType === "desktop" && projects[activeProject].padding
-                    ? "0 25%"
-                    : "0px",
-              }}
+              key={activeProject}
+              className={`animate__animated  animate__zoomIn`}
             >
-              <Slider adaptiveHeight={true} {...settings}>
-                {projects[activeProject].images.map(
-                  (imageURL: string, index: number) => (
-                    <img key={index} src={imageURL} alt={`Image ${index}`} />
-                  )
-                )}
-              </Slider>
-            </div>
-            <div className={styles.description}>
-              <p>{projects[activeProject].description}</p>
+              <div
+                className={styles.gallery}
+                style={{
+                  padding:
+                    deviceType === "desktop" && projects[activeProject].padding
+                      ? "0 25%"
+                      : "0px",
+                }}
+              >
+                <Slider adaptiveHeight={true} {...settings}>
+                  {projects[activeProject].images.map(
+                    (imageURL: string, index: number) => (
+                      <img key={index} src={imageURL} alt={`Image ${index}`} />
+                    )
+                  )}
+                </Slider>
+              </div>
+              <div className={styles.description}>
+                <p>{projects[activeProject].description}</p>
 
-              <div className={styles.buttons}>
-                <a
-                  className={styles.github}
-                  href={projects[activeProject].source_link}
-                  target="_blank"
-                >
-                  View Code <i className="fa-brands fa-github-alt"></i>
-                </a>
-                <a
-                  className={styles.demo_link}
-                  href={projects[activeProject].demo_link}
-                  target="_blank"
-                >
-                  Live Demo <i className="fa-solid fa-up-right-from-square"></i>
-                </a>
+                <div className={styles.buttons}>
+                  <a
+                    className={styles.github}
+                    href={projects[activeProject].source_link}
+                    target="_blank"
+                  >
+                    View Code <i className="fa-brands fa-github-alt"></i>
+                  </a>
+                  <a
+                    className={styles.demo_link}
+                    href={projects[activeProject].demo_link}
+                    target="_blank"
+                  >
+                    Live Demo{" "}
+                    <i className="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
