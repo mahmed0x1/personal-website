@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "name": "ChatApp",
+      "description": "Test Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+      "source_link": "https://www.github.com",
+      "demo_link": "https://www.link.com",
+      "images": [
+        "/projects/chatapp/1.jpg",
+        "/projects/chatapp/2.jpg",
+        "/projects/chatapp/3.jpg",
+        "/projects/chatapp/4.jpg",
+        "/projects/chatapp/5.jpg",
+        "/projects/chatapp/6.jpg",
+        "/projects/chatapp/7.jpg"
+      ],
+      "padding": true
+    },
+    {
+      "name": "쓰레기 공작소",
+      "description": "Test Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+      "source_link": "https://www.github.com",
+      "demo_link": "https://www.link.com",
+      "images": [
+        "/projects/쓰레기공작소/1.png",
+        "/projects/쓰레기공작소/2.png"
+      ],
+      "padding": false
+    }
+  ]
+}
