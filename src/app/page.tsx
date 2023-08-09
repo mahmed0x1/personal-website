@@ -16,7 +16,7 @@ export default function Home() {
         <p className={styles.introduction}>
           I am an ambitious software developer with a strong passion for coding.
           My interests include: <span>Web Development</span>{" "}
-          <span>Mobile Applications</span> <span>Automation</span>{" "}
+          <span>Mobile Applications</span> <span>UI/UX</span>{" "}
           <span>Competitive Programming</span> <span>Game Design</span>{" "}
           <span>Artifical Intelligence</span> and much more! Check up my resume
           and kindly contact me if you have any opportunities :)

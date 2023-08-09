@@ -89,7 +89,7 @@
   letter-spacing: 0.5px;
   margin: 8px 0;
   margin-bottom: 1.5rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   color: #eee;
   font-family: "Roboto", monospace;
 }
@@ -119,6 +119,15 @@
 .project .buttons .github:hover {
   background-color: rgb(161, 22, 161);
 }
+
+.project .buttons .button_disabled {
+  background-color: #666 !important;
+  cursor: not-allowed;
+}
+
+.project .buttons .button_disabled:hover {
+  background-color: #666;
+}
 .project .buttons a i {
   margin-left: 0.5rem;
 }
@@ -140,6 +149,7 @@ ul.projects_list_mobile {
 ul.projects_list_mobile li {
   margin: 1rem 0.5rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 ul.projects_list_mobile li.active {
@@ -160,7 +170,8 @@ ul.projects_list_mobile li.active {
   }
   .project {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding: 0;
   }
 
   .projects {
@@ -190,6 +201,7 @@ ul.projects_list_mobile li.active {
     text-align: center;
     display: block;
     margin: 4px 0;
+    padding: 1rem 0;
     width: 100%;
   }
 }

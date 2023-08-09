@@ -18,6 +18,7 @@ interface PostData {
   date: Date;
   categories: string[];
   contentHtml: string;
+  description: string;
 }
 
 export async function generateMetadata({
@@ -29,6 +30,9 @@ export async function generateMetadata({
 
   return {
     title: postData.title,
+    description: postData.description,
+    authors: [{ name: "Mohammed Ahmed" }],
+    keywords: postData.categories.join(","),
   };
 }
 

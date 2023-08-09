@@ -136,14 +136,22 @@ const Projects: React.FC = ({}) => {
 
                 <div className={styles.buttons}>
                   <a
-                    className={styles.github}
+                    className={`${
+                      projects[activeProject].source_link
+                        ? ""
+                        : styles.button_disabled
+                    } ${styles.github}`}
                     href={projects[activeProject].source_link}
                     target="_blank"
                   >
                     View Code <i className="fa-brands fa-github-alt"></i>
                   </a>
                   <a
-                    className={styles.demo_link}
+                    className={`${
+                      projects[activeProject].demo_link
+                        ? ""
+                        : styles.button_disabled
+                    } ${styles.demo_link}`}
                     href={projects[activeProject].demo_link}
                     target="_blank"
                   >
