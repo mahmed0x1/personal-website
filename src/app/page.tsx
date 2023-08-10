@@ -19,7 +19,7 @@ export default function Home() {
           <span>Mobile Applications</span> <span>UI/UX</span>{" "}
           <span>Competitive Programming</span> <span>Game Design</span>{" "}
           <span>Artifical Intelligence</span> and much more! Check up my resume
-          and kindly contact me if you have any opportunities :&rpar;
+          and kindly contact me if you have any opportunities :)
         </p>
       </div>
     </div>
