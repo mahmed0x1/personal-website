@@ -1,5 +1,6 @@
 import styles from "./blogCard.module.css";
-import { v4 as uuidv4 } from "uuid";
+
+import Image from "next/image";
 
 interface NavigationProps {
   title: string;
@@ -16,7 +17,6 @@ const BlogCard: React.FC<NavigationProps> = ({
   cover,
   date,
   slug,
-  key,
   categories,
   description,
 }) => {
@@ -25,8 +25,8 @@ const BlogCard: React.FC<NavigationProps> = ({
       <img src={cover} alt="Article Cover" />
       <h1>{title}</h1>
       <div className={styles.categories}>
-        {categories.map((category) => (
-          <div key={uuidv4()} className={styles.category}>
+        {categories.map((category, index) => (
+          <div key={index} className={styles.category}>
             {category}
           </div>
         ))}

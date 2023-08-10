@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { GetStaticPaths } from "next";
+import { GetStaticPaths, Metadata } from "next";
 import matter, { GrayMatterFile } from "gray-matter";
 import Script from "next/script";
 
@@ -25,9 +25,8 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}) {
+}): Promise<Metadata> {
   const postData: PostData = await getPostData(params.slug);
-
   return {
     title: postData.title,
     description: postData.description,
@@ -50,8 +49,10 @@ export default async function Blog({ params }: { params: { slug: string } }) {
             <h1>{postData.title}</h1>
           </div>
           <div className={styles.categories}>
-            {postData.categories.map((category) => (
-              <div className={styles.category}>{category}</div>
+            {postData.categories.map((category, index) => (
+              <div key={index} className={styles.category}>
+                {category}
+              </div>
             ))}
           </div>
           <article
@@ -69,10 +70,9 @@ export default async function Blog({ params }: { params: { slug: string } }) {
     </div>
   );
 }
-
-export const getStaticPaths: GetStaticPaths = async () => {
+export function getStaticPaths() {
   const postsDirectory = path.join(process.cwd(), "posts");
-  const filenames = fs.readdirSync(postsDirectory);
+  const filenames: string[] = fs.readdirSync(postsDirectory);
   const paths = filenames.map((filename) => {
     const fullPath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -88,4 +88,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths,
     fallback: false,
   };
-};
+}

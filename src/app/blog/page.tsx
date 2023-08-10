@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/posts";
 import Navigation from "@/components/navigation";
 import BlogCard from "@/components/blogCard";
 import Pagination from "@/components/Pagination";
+import { v4 } from "uuid";
 
 import styles from "./page.module.css";
 
@@ -22,6 +23,7 @@ export default async function Blog({
     <div className={styles.root}>
       <Navigation active="blog" />
       <div
+        key={v4()}
         className={`animate__animated animate__fadeIn ${styles.main}`}
         style={{
           justifyContent: posts.length > 0 ? "flex-start" : "space-between",

@@ -11,7 +11,7 @@ export default function Home() {
       >
         <span className={styles.greeting}>Hello There!</span>
         <h1 className={styles.name}>
-          I'm <span>Mohammed Ahmed</span>.
+          I&apos;m <span>Mohammed Ahmed</span>.
         </h1>
         <p className={styles.introduction}>
           I am an ambitious software developer with a strong passion for coding.
@@ -19,7 +19,7 @@ export default function Home() {
           <span>Mobile Applications</span> <span>UI/UX</span>{" "}
           <span>Competitive Programming</span> <span>Game Design</span>{" "}
           <span>Artifical Intelligence</span> and much more! Check up my resume
-          and kindly contact me if you have any opportunities :)
+          and kindly contact me if you have any opportunities :&rpar;
         </p>
       </div>
     </div>
