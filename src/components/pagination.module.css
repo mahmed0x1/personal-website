@@ -1,6 +1,6 @@
 .pagination {
   position: absolute;
-  bottom: 0;
+  bottom: 18px;
   display: flex;
   list-style-type: none;
   align-items: center;

@@ -1,8 +1,9 @@
 .card {
   display: block;
+  box-sizing: border-box !important;
   text-decoration: none;
   text-align: center;
-  width: 380px;
+  width: 30%;
   border: 1px solid #15284b;
 
   border-radius: 13px;
@@ -52,7 +53,18 @@
   margin-top: 0.5rem;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
-
   font-size: 14px;
   line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
 }

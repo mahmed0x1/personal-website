@@ -17,6 +17,7 @@ export default async function Blog({
 }) {
   const page = Number(searchParams.page) || 1;
   const posts = await getAllPosts();
+
   return (
     <div className={styles.root}>
       <Navigation active="blog" />
