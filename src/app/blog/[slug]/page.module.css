@@ -54,7 +54,6 @@
 }
 
 .image_container .image {
-  background-image: url("/images/article1.jpg"); /* Replace 'your-image.jpg' with your actual image URL */
   background-size: cover; /* Scale the image to cover the container */
   background-position: center; /* Position the image in the center */
   width: 100%;
@@ -104,7 +103,7 @@
 .main article h3 {
   font-weight: 400;
   font-family: "Outfit", sans-serif;
-  color: #35bdff;
+  color: #87ceeb;
   margin: 4px 0;
 }
 
@@ -158,9 +157,9 @@
   letter-spacing: 0.5px;
   margin-top: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: right;
   padding: 1rem 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee2c;
   color: #eee;
 }
 

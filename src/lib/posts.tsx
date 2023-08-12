@@ -74,5 +74,9 @@ export async function getAllPosts(): Promise<PostsData[]> {
     })
   );
 
+  postsData.sort(
+    (a: PostsData, b: PostsData) => b.date.getTime() - a.date.getTime()
+  );
+
   return postsData;
 }

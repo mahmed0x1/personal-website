@@ -15,6 +15,7 @@ import styles from "./page.module.css";
 interface PostData {
   id: string;
   title: string;
+  cover: string;
   date: Date;
   categories: string[];
   contentHtml: string;
@@ -43,7 +44,10 @@ export default async function Blog({ params }: { params: { slug: string } }) {
       <div className={styles.wrapper}>
         <div className={styles.main}>
           <div className={styles.image_container}>
-            <div className={styles.image}></div>
+            <div
+              className={styles.image}
+              style={{ backgroundImage: `url("${postData.cover}");` }}
+            ></div>
           </div>
           <div className={styles.article_header}>
             <h1>{postData.title}</h1>
@@ -66,7 +70,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
         </div>
       </div>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" />
-      <Script src="/scripts/highlight.js" strategy="afterInteractive" />
+      <Script src="/scripts/blog_article.js" />
     </div>
   );
 }

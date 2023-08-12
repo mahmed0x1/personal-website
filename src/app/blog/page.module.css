@@ -29,6 +29,7 @@
 .main > .blogCards {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 2rem;
