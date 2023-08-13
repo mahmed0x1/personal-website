@@ -155,9 +155,10 @@
 .article_footer {
   font-family: "Outfit", sans-serif;
   letter-spacing: 0.5px;
-  margin-top: 2rem;
+  margin: 1rem 0;
   width: 100%;
   text-align: right;
+  font-size: 14px;
   padding: 1rem 0;
   border-top: 1px solid #eeeeee2c;
   color: #eee;

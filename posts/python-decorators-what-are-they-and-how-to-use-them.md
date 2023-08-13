@@ -9,7 +9,8 @@ description: In this article I will be explaining one of the most powerful featu
 
 ## 📌 Introduction to Python Decorators
 
-In Python programming language, functions can be treated as objects, meaning we can assing them to another variables or pass them to other functions. This feature of python was the basis for introducting another powerful feature which is function decorators.
+In Python programming language, functions can be treated as objects, meaning we can assign them to variables or pass them to other functions. This feature of python was the basis for introducting another powerful feature which is function decorators.
+
 Decorators are wrappers or higher order functions, which in simple terms are functions that take another function as an argument and try to add or extend the behavior of that passed function. Decorators allow us to add or restrict the behavior of wrapped functions without having to modify their source code as I will be showing in the follwing examples.
 
 ## 📌 Exploring Syntax and Basic Examples
