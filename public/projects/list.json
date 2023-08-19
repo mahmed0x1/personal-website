@@ -1,20 +1,17 @@
 {
   "projects": [
     {
-      "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": null,
-      "demo_link": null,
+      "name": "Personal Website",
+      "description": "Making my own website had been something that I was putting off for quite a long time mainly because I do not enjoy the tedious process of web design. I used Figma to plan out how my website should look before I started coding. I chose TypeScript and Next.js v13 mainly because they are trendy and I wanted to get better at using them. For design, I took inspiration from other developers' websites and tried to follow material design guidelines. I used few external libraries to add some components and animations.  I kept all website data static in the filesystem because it is easier to scale and modify later on. For deployment, I used vercel because it intergrates very smoothly with Next.js applications.",
+      "source_link": "https://github.com/mahmed0x1/personal-website",
+      "demo_link": "https://mahmed0x1.vercel.app/",
       "images": [
-        "/projects/chatapp/1.jpg",
-        "/projects/chatapp/2.jpg",
-        "/projects/chatapp/3.jpg",
-        "/projects/chatapp/4.jpg",
-        "/projects/chatapp/5.jpg",
-        "/projects/chatapp/6.jpg",
-        "/projects/chatapp/7.jpg"
+        "/projects/personal-website/1.png",
+        "/projects/personal-website/2.png",
+        "/projects/personal-website/3.png",
+        "/projects/personal-website/4.png"
       ],
-      "padding": true
+      "padding": false
     },
     {
       "name": "ChatApp",
@@ -32,70 +29,7 @@
       ],
       "padding": true
     },
-    {
-      "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": null,
-      "demo_link": null,
-      "images": [
-        "/projects/chatapp/1.jpg",
-        "/projects/chatapp/2.jpg",
-        "/projects/chatapp/3.jpg",
-        "/projects/chatapp/4.jpg",
-        "/projects/chatapp/5.jpg",
-        "/projects/chatapp/6.jpg",
-        "/projects/chatapp/7.jpg"
-      ],
-      "padding": true
-    },
-    {
-      "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": null,
-      "demo_link": null,
-      "images": [
-        "/projects/chatapp/1.jpg",
-        "/projects/chatapp/2.jpg",
-        "/projects/chatapp/3.jpg",
-        "/projects/chatapp/4.jpg",
-        "/projects/chatapp/5.jpg",
-        "/projects/chatapp/6.jpg",
-        "/projects/chatapp/7.jpg"
-      ],
-      "padding": true
-    },
-    {
-      "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": null,
-      "demo_link": null,
-      "images": [
-        "/projects/chatapp/1.jpg",
-        "/projects/chatapp/2.jpg",
-        "/projects/chatapp/3.jpg",
-        "/projects/chatapp/4.jpg",
-        "/projects/chatapp/5.jpg",
-        "/projects/chatapp/6.jpg",
-        "/projects/chatapp/7.jpg"
-      ],
-      "padding": true
-    },
-    {
-      "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": null,
-      "demo_link": null,
-      "images": [
-        "/projects/chatapp/1.jpg",
-        "/projects/chatapp/2.jpg",
-        "/projects/chatapp/3.jpg",
-        "/projects/chatapp/4.jpg",
-        "/projects/chatapp/5.jpg",
-        "/projects/chatapp/6.jpg",
-        "/projects/chatapp/7.jpg"
-      ],
-      "padding": true
-    },
+
     {
       "name": "쓰레기 공작소",
       "description": "Test Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",

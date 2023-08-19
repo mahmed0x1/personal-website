@@ -39,6 +39,11 @@
   align-items: center;
 }
 
+.project .description p {
+  text-indent: 40px;
+  text-align: justify;
+}
+
 .projects ul.projects_list {
   padding: 0 2rem;
   list-style-type: none;

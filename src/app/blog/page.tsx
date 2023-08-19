@@ -5,9 +5,15 @@ import BlogCard from "@/components/blogCard";
 import Pagination from "@/components/Pagination";
 import { v4 } from "uuid";
 
+import { Metadata } from "next";
+
 import styles from "./page.module.css";
 
 const BLOGS_PER_PAGE = 6;
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 export default async function Blog({
   params,

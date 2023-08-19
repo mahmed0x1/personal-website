@@ -17,7 +17,7 @@ const links = [
 // Create a stream to write to
 const stream = new SitemapStream({ hostname: "https://mahmed0x1.vercel.app" });
 
-const sitemapPath = "./public/sitemap.xml";
+const sitemapPath = "./public/files/sitemap.xml";
 
 // Return a promise that resolves with your XML string
 return streamToPromise(Readable.from(links).pipe(stream)).then((data) => {

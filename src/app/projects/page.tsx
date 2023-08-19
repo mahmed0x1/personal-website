@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import "node_modules/slick-carousel/slick/slick.css";
 import "node_modules/slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
 
 import { v4 } from "uuid";
 
@@ -42,6 +43,8 @@ const Projects: React.FC = ({}) => {
     updateDeviceType();
     getProjectsData();
 
+    document.title = "Projects";
+
     window.addEventListener("resize", updateDeviceType);
 
     // Cleanup the event listener on component unmount
@@ -64,6 +67,7 @@ const Projects: React.FC = ({}) => {
   return shouldRender ? (
     <div className={styles.root}>
       <Navigation active="projects" />
+
       <div className={`${styles.main}`}>
         <div className={styles.projects}>
           {deviceType === "desktop" ? (
