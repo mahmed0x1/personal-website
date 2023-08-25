@@ -15,7 +15,7 @@
     },
     {
       "name": "ChatApp",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+      "description": "Prior to learning React Native I had no experience with mobile apps development whatsoever and this app was my attempet for utilizing all the things I learned about React Native. I used Expo because it makes it very easy to test your app directly on a physical device and has many other handy feautres. I used extenral libraies such as React Navigation for navigation, React-Native-Gifted-Chat for different chat components, and Redux for data management. For backend, I used node.js, Socket.io, and Mongo.db.",
       "source_link": null,
       "demo_link": null,
       "images": [
@@ -29,12 +29,24 @@
       ],
       "padding": true
     },
+    {
+      "name": "NewsApp",
+      "description": "I build this website to practice using React with Redux for data management. I used NewsAPI for getting news articles. ",
+      "source_link": "https://github.com/mahmed0x1/react-news-app",
+      "demo_link": "https://newsappreact01.netlify.app/",
+      "images": [
+        "/projects/newsapp/1.png",
+        "/projects/newsapp/2.png",
+        "/projects/newsapp/3.png"
+      ],
+      "padding": false
+    },
 
     {
       "name": "쓰레기 공작소",
-      "description": "Test Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing Test Lorem Ipsum is simply dummy text of the printing scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
-      "source_link": "https://www.github.com",
-      "demo_link": "https://www.link.com",
+      "description": "I did this project as part of a team for univesity class final project. The platform is centered around promoting recycling awareness and educating users about effective recycling practices, such as providing information about trash disposal schedules within the Seoul city area. We used KakaoMap API to obtain maps and and present relevant data on them. I was particularly responsible about designing the UI and coding the backend for this project.",
+      "source_link": null,
+      "demo_link": null,
       "images": [
         "/projects/쓰레기공작소/1.png",
         "/projects/쓰레기공작소/2.png"
