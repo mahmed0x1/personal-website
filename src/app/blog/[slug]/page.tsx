@@ -46,7 +46,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
           <div className={styles.image_container}>
             <div
               className={styles.image}
-              style={{ backgroundImage: `url("${postData.cover}");` }}
+              style={{ backgroundImage: `url("${postData.cover}")` }}
             ></div>
           </div>
           <div className={styles.article_header}>
