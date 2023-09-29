@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Home",
   description:
     "Hi my name is Mohammed Ahmed, I am an ambitious software developer with strong passion for coding. Check up my website!",
+  icons: {
+    icon: "/assets/favicon_io/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({
