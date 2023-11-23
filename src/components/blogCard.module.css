@@ -35,10 +35,12 @@
 
 .card .categories {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card .categories .category {
   display: inline-block;
+  margin: 4px 0;
   margin-right: 5px;
   font-size: 12px;
   letter-spacing: 1px;

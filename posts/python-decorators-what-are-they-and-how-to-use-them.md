@@ -1,8 +1,8 @@
 ---
 title: Python Decorators, What Are They And How To Use Them
 slug: python-decorators-what-are-they-and-how-to-use-them
-date: 2023-02-01
-cover: /images/article2.jpg
+date: 2023-08-20
+cover: /images/articles/article1.jpg
 categories: ["Python", "Python Development"]
 description: In this article I will be explaining one of the most powerful features in Python that allows programmers to achieve more behavior with regular functions.
 ---

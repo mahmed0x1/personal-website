@@ -1,3 +1,7 @@
+hljs.configure({
+  languages: ["python"],
+});
+
 hljs.highlightAll();
 const links = document.links;
 for (const link of links) {
