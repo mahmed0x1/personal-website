@@ -63,15 +63,16 @@
 .main .categories {
   display: flex;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 
   align-self: flex-start;
 }
 
 .main .categories .category {
   display: inline-block;
-  margin-right: 5px;
   font-size: 14px;
   letter-spacing: 1px;
+  margin: 4px 2px;
   font-family: "Outfit", sans-serif;
   color: white;
   border-radius: 50px;
