@@ -63,6 +63,9 @@ export default async function Blog({ params }: { params: { slug: string } }) {
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           ></article>
           <div className={styles.article_footer}>
+            <a target="_blank" href="https://www.buymeacoffee.com/0x7md">
+              <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=0x7md&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff" />
+            </a>
             <span>
               Updated On: {moment(postData.date).format("MMM Do YYYY")}
             </span>
