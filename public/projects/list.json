@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Personal Website",
-      "description": "Making my own website had been something that I was putting off for quite a long time mainly because I do not enjoy the tedious process of web design. I used Figma to plan out how my website should look before I started coding. I chose TypeScript and Next.js v13 mainly because they are trendy and I wanted to get better at using them. For design, I took inspiration from other developers' websites and tried to follow material design guidelines. I used few external libraries to add some components and animations.  I kept all website data static in the filesystem because it is easier to scale and modify later on. For deployment, I used vercel because it intergrates very smoothly with Next.js applications.",
+      "description": "Making my own website had been something that I was putting off for quite a long time mainly because I do not enjoy the tedious process of web design. I used Figma to plan out how my website should look before I started coding. I chose TypeScript and Next.js v13 mainly because they are robust and trendy frameworks, and I wanted to get better at using them. For design, I took inspiration from other developers' websites and tried to follow material design guidelines. I used few external libraries to add some components and animations.  I kept all website data static in the filesystem because it is easier to scale and modify later on. For deployment, I used vercel because it intergrates very smoothly with Next.js applications.",
       "source_link": "https://github.com/mahmed0x1/personal-website",
       "demo_link": "https://mahmed0x1.vercel.app/",
       "images": [
@@ -30,18 +30,13 @@
       "padding": true
     },
     {
-      "name": "NewsApp",
-      "description": "I built this website to practice using React with Redux for data management. I used NewsAPI for getting news articles. ",
-      "source_link": "https://github.com/mahmed0x1/react-news-app",
-      "demo_link": "https://newsappreact01.netlify.app/",
-      "images": [
-        "/projects/newsapp/1.png",
-        "/projects/newsapp/2.png",
-        "/projects/newsapp/3.png"
-      ],
-      "padding": false
+      "name": "GymTrack",
+      "description": "I contributed to designing and prototyping several views in the application created by my team for the Seoul Tech Impact Hackathon 2023.",
+      "source_link": "https://devpost.com/software/gymtrack",
+      "demo_link": "https://devpost.com/software/gymtrack",
+      "images": ["/projects/gymtrack/1.png", "/projects/gymtrack/2.png"],
+      "padding": true
     },
-
     {
       "name": "쓰레기 공작소",
       "description": "I did this project as part of a team at univesity for a class final project. The platform is centered around promoting recycling awareness and educating users about effective recycling practices, such as providing information about trash disposal schedules within the Seoul city area. We used KakaoMap API to obtain maps and and present relevant data on them. I was particularly responsible about designing the UI and coding the backend for this project.",
@@ -50,6 +45,18 @@
       "images": [
         "/projects/쓰레기공작소/1.png",
         "/projects/쓰레기공작소/2.png"
+      ],
+      "padding": false
+    },
+    {
+      "name": "NewsApp",
+      "description": "I built this website to practice using React with Redux for data management. I used NewsAPI for getting news articles. ",
+      "source_link": "https://github.com/mahmed0x1/react-news-app",
+      "demo_link": "https://newsappreact01.netlify.app/",
+      "images": [
+        "/projects/newsapp/1.png",
+        "/projects/newsapp/2.png",
+        "/projects/newsapp/3.png"
       ],
       "padding": false
     }
