@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -53,6 +55,7 @@ export default function RootLayout({
       <Script src="/scripts/particles.js/particles.js" />
       <Script src="https://kit.fontawesome.com/dfb093cc90.js" />
       <Script src="/scripts/main.js" />
+      <GoogleAnalytics gaId="G-4XL4KP11EY" />
     </html>
   );
 }
