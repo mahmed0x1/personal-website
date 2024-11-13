@@ -55,7 +55,7 @@ export default function RootLayout({
       <Script src="/scripts/particles.js/particles.js" />
       <Script src="https://kit.fontawesome.com/dfb093cc90.js" />
       <Script src="/scripts/main.js" />
-      <GoogleAnalytics gaId="G-Q92KT8DCHL" />
+      <GoogleAnalytics gaId="G-KKC84F5JM3" />
     </html>
   );
 }
