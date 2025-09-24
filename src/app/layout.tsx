@@ -47,6 +47,11 @@ export default function RootLayout({
           href="/assets/favicon_io/favicon-16x16.png"
         />
         <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4193516454566458"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body>
         <div id="particles-background"></div>
